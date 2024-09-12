@@ -1,0 +1,7 @@
+{
+  "name": "hola-mundotab",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
