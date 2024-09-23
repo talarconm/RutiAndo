@@ -10,9 +10,12 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+// iconoss
 import { ellipse, square, triangle } from 'ionicons/icons';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
+
+// se registran la paginas
+import Inicio from './pages/Tab1';
+import Producto from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 
 /* Core CSS required for Ionic components to work properly */
@@ -52,11 +55,12 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
+          {/* cada vez q quiero esta vista , se llaama asi */}
           <Route exact path="/tab1">
-            <Tab1 />
+            <Inicio />
           </Route>
           <Route exact path="/tab2">
-            <Tab2 />
+            <Producto />
           </Route>
           <Route path="/tab3">
             <Tab3 />
