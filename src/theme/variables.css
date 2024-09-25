@@ -1,2 +1,14 @@
 /* For information on how to create your own theme, please see:
 http://ionicframework.com/docs/theming/ */
+
+/* le da estilo a todas las paginas*/
+
+.custom-text {
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    }
+
+    ion-content {
+        --background: #c2f4f7; /* Color de fondo de la aplicación (púrpura) */
+    }
