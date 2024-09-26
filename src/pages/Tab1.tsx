@@ -1,7 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonText, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import '../theme/variables.css';
-
+import '../theme/Tab1.css';
 const Tab1: React.FC = () => {
   return (
     <IonPage>
@@ -11,7 +11,7 @@ const Tab1: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
+        <IonHeader collapse="condense"> {/* permite que la cabecera se "condense" cuando el usuario comienza a desplazarse por la página*/}
           <IonToolbar>
             <IonTitle size="large">Tab 1</IonTitle>
           </IonToolbar>

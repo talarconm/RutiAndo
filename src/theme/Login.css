@@ -1,0 +1,18 @@
+.toolbar {
+    --background: #6200ea;
+    /*color de fondo*/
+}
+
+.tittle-login{
+    color: #7beff6;
+    font-family: "Alatsi-Regular", Helvetica;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 0;
+}
+
+/* inicio sesion*/
+.tex-inicio {
+    text-align: center;
+    margin-top: 20px;
+}

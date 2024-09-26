@@ -1,0 +1,73 @@
+/* tab 2 RUTAS*/
+.bar {
+    --background: #6200ea;
+    /*color de fondo*/
+}
+
+.tex-titulo {
+    color: #7beff6;
+    font-family: "Alatsi-Regular", Helvetica;
+    text-align: left;
+    font-size: 40px;
+    letter-spacing: 0;
+}
+
+h2 {
+    color: #6200ea;
+    font-family: "Alatsi-Regular", Helvetica;
+}
+
+
+.container-cards {
+    display: flex;
+    /* para q se pongan en fila */
+    flex-direction: row;
+    /* alinear las tarjetas en fila */
+    gap: -10px;
+    /* espacio entre las tarjetas */
+    padding: 0px;
+    justify-content: center;
+    /* Centrar las tarjetas en la página */
+    align-items: flex-start;
+    /* cards alineadas en la parte superior si tienen alturas diferentes. */
+
+}
+
+/* tamaño cards*/
+.card1,
+.card2,
+.card3 {
+    max-width: 150px;
+    /*define el ancho*/
+    max-height: 210px;
+    /*define el largo de la card*/
+    height: fit-content;
+    width: 100%;
+    /*el ancho sera del 100% del contenedor*/
+}
+
+/*para el texto del subtitulo*/
+.card-header1,
+.card-header2,
+.card-header3 {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    /* Dos filas: una para el título y otra para el subtítulo */
+}
+
+.ion-tex-mapa {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/*imagen mapa*/
+.imagen {
+    width: 100%;
+    /* Asegura que la imagen ocupe el 100% del contenedor */
+    max-width: 600px;
+    /* Máximo ancho */
+    margin: 20px auto;
+    /* Centra la imagen horizontalmente */
+    display: block;
+}

@@ -10,14 +10,17 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-// iconoss
-import { ellipse, square, triangle } from 'ionicons/icons';
 
-// se registran la paginas
+//iconoss
+import { homeOutline, mapOutline, chatbubbleOutline, personOutline } from 'ionicons/icons';
+
+//se registran la paginas
+import Login from './pages/Login';// página de Login
 import Inicio from './pages/Tab1';
-import Producto from './pages/Tab2';
+import Rutas from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 import Tab4 from './pages/Tab4';
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -51,50 +54,61 @@ import './theme/variables.css';
 
 setupIonicReact();
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonTabs>
+const App: React.FC = () => {
+  return (
+    <IonApp>
+      <IonReactRouter>
         <IonRouterOutlet>
-          {/* cada vez q quiero esta vista , se llaama asi */}
-          <Route exact path="/tab1">
-            <Inicio />
-          </Route>
-          <Route exact path="/tab2">
-            <Producto />
-          </Route>
-          <Route path="/tab3">
-            <Tab3 />
-          </Route>
-          <Route exact path="/tab4">
-            <Tab4 />
+          {/*redirigir al login cuando se abre la aplicación */}
+          <Route exact path="/">
+            <Redirect to="/login" />
           </Route>
 
-          <Route exact path="/">
-            <Redirect to="/tab1" />
+          {/*para q siempre se muestre la pantalla de login al inicio */}
+          <Route exact path="/login">
+            <Login />
           </Route>
         </IonRouterOutlet>
-        <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon aria-hidden="true" icon={triangle} />
-            <IonLabel>Inicio</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon aria-hidden="true" icon={ellipse} />
-            <IonLabel>Rutas</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon aria-hidden="true" icon={square} />
-            <IonLabel>Comunidad</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab4" href="/tab4">
-            <IonIcon aria-hidden="true" icon={ellipse} />
-            <IonLabel>Perfil</IonLabel>
-          </IonTabButton>
-        </IonTabBar>
-      </IonTabs>
-    </IonReactRouter>
-  </IonApp>
-);
+
+        {/*aqui estan las tabs y el router outlet */}
+        <IonTabs>
+          <IonRouterOutlet>
+            <Route exact path="/tab1">
+              <Inicio />
+            </Route>
+            <Route exact path="/tab2">
+              <Rutas />
+            </Route>
+            <Route exact path="/tab3">
+              <Tab3 />
+            </Route>
+            <Route exact path="/tab4">
+              <Tab4 />
+            </Route>
+          </IonRouterOutlet>
+
+          <IonTabBar slot="bottom">
+            <IonTabButton tab="tab1" href="/tab1">
+              <IonIcon aria-hidden="true" icon={homeOutline} />
+              <IonLabel>Inicio</IonLabel>
+            </IonTabButton>
+            <IonTabButton tab="tab2" href="/tab2">
+              <IonIcon aria-hidden="true" icon={mapOutline} />
+              <IonLabel>Rutas</IonLabel>
+            </IonTabButton>
+            <IonTabButton tab="tab3" href="/tab3">
+              <IonIcon aria-hidden="true" icon={chatbubbleOutline} />
+              <IonLabel>Comunidad</IonLabel>
+            </IonTabButton>
+            <IonTabButton tab="tab4" href="/tab4">
+              <IonIcon aria-hidden="true" icon={personOutline} />
+              <IonLabel>Perfil</IonLabel>
+            </IonTabButton>
+          </IonTabBar>
+        </IonTabs>
+      </IonReactRouter>
+    </IonApp>
+  );
+};
 
 export default App;
