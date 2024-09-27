@@ -1,0 +1,100 @@
+IonContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+
+.card-container {
+    display: flex;
+    
+    justify-content: space-between;
+    padding: 16px;
+}
+
+
+.card { /* esta card no se quedan quietas tengo que ver por qué*/
+    background-color: #622CBB;
+    height: 150px;
+    width: 30%; 
+    margin: 8px;
+}
+
+
+ion-item.progreso { background-color: aqua !important;} /* no funciona no se por que  */
+
+
+
+.progresotitulo {
+    font-family: "Alatsi-Regular", Helvetica;
+    font-size: 35px;
+    color: #622CBB;}
+
+
+.progreso {
+    margin: 16px; 
+    background-color: #a1d8db; 
+}
+
+
+.carduser {
+    background-color: #c2f4f7;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.carduser-content {
+    display: flex;
+    align-items: center; /* Centra la imagen y el texto verticalmente */
+}
+
+.foto-perfil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Hace la imagen redonda */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    padding-left: 0; /* Asegúrate de que no haya relleno */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-title {
+    color: #622CBB;
+    font-size: 25px;
+}
+
+.user-subtitle {
+    color: #622CBB;
+    font-size: 15px;
+}
+
+
+.logros {
+    padding-top: 20px;
+    font-family: "Alatsi-Regular", Helvetica;
+    font-size: 35px;
+    color: #622CBB;}
+
+.calendario {
+    background-color: beige;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.imagen-calendario {
+    max-width: 100%;  
+    height: auto;     
+    object-fit: contain; 
+}

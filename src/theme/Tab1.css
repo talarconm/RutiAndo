@@ -1,16 +1,60 @@
-/* tab 1*/
+.searchbar {
+    --background: #622CBB;
+    --color: white;
+    --placeholder-color: #eeeeee;
+    padding-left: 30px;
+}
 
-/* RutiAndo*/
-.tex-titulo1 {
-    text-align: center;
-    margin-top: 20px;
+
+.cardinicio {
+    background-color: #622CBB;
+    height: 200px;
+    width: 32%;
+}
+
+.cardinicio2 {
+    background-color: #622CBB;
+    height: 200px;
+    width: 32%;
+}
+
+.cardinicio3 {
+    background-color: #622CBB;
+    height: 200px;
+    width: 32%;
+}
+
+
+.card-container-incio {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin: -20px; /* para agrandar las cards */
+}
+
+.actividades {
+    font-size: 30px;
     color: #622CBB;
-    font-family: "Alatsi-Regular", Helvetica;
-}
-
-/* inicio sesion*/
-.ion-tex-inicio {
     text-align: center;
-    margin-top: 20px;
-
 }
+
+.publicacion {
+    background-color: #622CBB;
+}
+
+.publicaciones-titulo {
+    color: #622CBB;
+    text-align: center;
+    font-size: 30px;
+}
+
+.publicacion-subtitulo {
+    color: #eeeeee;
+    font-size: 25px
+}
+
+.boton-publicar {
+    --background: #622CBB;
+    /* Color de fondo */
+    --color: white;
+    /* Color del texto */}

@@ -16,7 +16,7 @@ import { homeOutline, mapOutline, chatbubbleOutline, personOutline } from 'ionic
 
 //se registran la paginas
 import Login from './pages/Login';// página de Login
-import Inicio from './pages/Tab1';
+import Inicio from './pages/inicio';
 import Rutas from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 import Tab4 from './pages/Tab4';
@@ -73,7 +73,7 @@ const App: React.FC = () => {
         {/*aqui estan las tabs y el router outlet */}
         <IonTabs>
           <IonRouterOutlet>
-            <Route exact path="/tab1">
+            <Route exact path="/inicio">
               <Inicio />
             </Route>
             <Route exact path="/tab2">
@@ -88,7 +88,7 @@ const App: React.FC = () => {
           </IonRouterOutlet>
 
           <IonTabBar slot="bottom">
-            <IonTabButton tab="tab1" href="/tab1">
+            <IonTabButton tab="tab1" href="/inicio">
               <IonIcon aria-hidden="true" icon={homeOutline} />
               <IonLabel>Inicio</IonLabel>
             </IonTabButton>

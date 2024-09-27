@@ -1,11 +1,35 @@
-/* For information on how to create your own theme, please see:
-http://ionicframework.com/docs/theming/ */
-
-/* le da estilo a todas las paginas*/
 ion-content {
-    --background: #c2f4f7;
+    --background: #c2f4f7; 
+}
+/* tab 1*/
+
+/* RutiAndo*/
+.tex-titulo1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #622CBB;
+    font-family: "Alatsi-Regular", Helvetica;
 }
 
+/* inicio sesion*/
+.ion-tex-inicio {
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    }
 
+/* tab 2*/
+.bar {
+    --background: #6200ea;}
 
-
+.tex-titulo{
+    color: #7beff6;
+    font-family: "Alatsi-Regular", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: fixed;
+    top: 0;
+}
