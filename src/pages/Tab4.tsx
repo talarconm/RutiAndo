@@ -1,10 +1,7 @@
 import React from 'react';
-import { IonItem, IonLabel } from '@ionic/react';
-import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonButton } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import '../theme/Tab4.css'; // Importa los estilos personalizados
-import zorro from '../src/theme/zorro.png';
+import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonMenuButton } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonButton,IonButtons } from '@ionic/react';
+import '../theme/Tab4.css'; 
 
 const Tab4: React.FC = () => {
     return (
@@ -12,21 +9,18 @@ const Tab4: React.FC = () => {
             <IonHeader>
                 <IonToolbar className='bar'>
                     <IonTitle className='tex-titulo'>RutiAndo</IonTitle>
+                    {/* boton para que se vea el menu */}
+                    <IonButtons slot='end'>
+                        <IonMenuButton/>
+                    </IonButtons>
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
-                <IonHeader collapse="condense">
-                    <IonToolbar>
-                        <IonTitle size="large">Tab 5</IonTitle>
-                    </IonToolbar>
-                </IonHeader>
-                <CardUser />
-                <br />
-                <br />
+                <CardUser/> 
 
                 <Botonpublicar/>
                 <Progreso />
-                <ExploreContainer name="" />
+                
                 <br />
                 <div className="calendario">
                     <img className="imagen-calendario" src="../src/images/calendario.png" alt="Calendario" />

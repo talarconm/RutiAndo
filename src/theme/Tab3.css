@@ -1,0 +1,54 @@
+.searchbar {
+    --background: #622CBB;
+    --color: white;
+    --placeholder-color: #eeeeee;
+    padding-left: 30px;
+}
+
+.cardinicio,
+.cardinicio2,
+.cardinicio3 {
+    background-color: #622CBB;
+    height: 200px;
+    width: 32%;
+}
+
+.card-container-incio {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin: -20px;
+    /* para agrandar las cards */
+}
+
+.title-rutas, .title-retos, .title-social{
+    font-size: large;
+}
+
+.actividades {
+    font-size: 30px;
+    color: #622CBB;
+    text-align: center;
+}
+
+.publicacion {
+    background-color: #622CBB;
+}
+
+.publicaciones-titulo {
+    color: #622CBB;
+    text-align: center;
+    font-size: 30px;
+}
+
+.publicacion-subtitulo {
+    color: #eeeeee;
+    font-size: 25px
+}
+
+.botonpublicar {
+    --background: #622CBB;
+    /* Color de fondo */
+    --color: white;
+    /* Color del texto */
+}

@@ -7,13 +7,12 @@ IonContent {
 
 .card-container {
     display: flex;
-    
     justify-content: space-between;
     padding: 16px;
 }
 
 
-.card { /* esta card no se quedan quietas tengo que ver por qué*/
+.card {
     background-color: #622CBB;
     height: 150px;
     width: 30%; 
@@ -23,7 +22,12 @@ IonContent {
 
 ion-item.progreso { background-color: aqua !important;} /* no funciona no se por que  */
 
-
+.boton-publicar{
+    --background: #622CBB;
+    /* Color de fondo */
+    --color: white;
+    /* Color del texto */
+}
 
 .progresotitulo {
     font-family: "Alatsi-Regular", Helvetica;
@@ -33,12 +37,12 @@ ion-item.progreso { background-color: aqua !important;} /* no funciona no se por
 
 .progreso {
     margin: 16px; 
-    background-color: #a1d8db; 
+    background-color: #457779; 
 }
 
 
 .carduser {
-    background-color: #c2f4f7;
+    background-color: #a1d8db;
     width: 90%;
     margin: 20px auto;
     border-radius: 10px;
@@ -47,16 +51,16 @@ ion-item.progreso { background-color: aqua !important;} /* no funciona no se por
 
 .carduser-content {
     display: flex;
-    align-items: center; /* Centra la imagen y el texto verticalmente */
+    align-items: center; /* centra la imagen y el texto verticalmente */
 }
 
 .foto-perfil {
     width: 80px;
     height: 80px;
-    border-radius: 50%; /* Hace la imagen redonda */
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
-    margin-left: 0; /* Elimina el margen izquierdo */
-    padding-left: 0; /* Asegúrate de que no haya relleno */
+    border-radius: 50%; /* hace la imagen redonda */
+    margin-right: 10px; /* espacio entre la imagen y el texto */
+    margin-left: 0; /* elimina el margen izquierdo */
+    padding-left: 0; /* que no haya relleno */
 }
 
 .user-info {

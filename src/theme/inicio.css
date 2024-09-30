@@ -6,30 +6,17 @@
 }
 
 
-.cardinicio {
-    background-color: #622CBB;
-    height: 200px;
-    width: 32%;
-}
-
-.cardinicio2 {
-    background-color: #622CBB;
-    height: 200px;
-    width: 32%;
-}
-
-.cardinicio3 {
-    background-color: #622CBB;
-    height: 200px;
-    width: 32%;
-}
-
-
 .card-container-incio {
     display: flex;
     justify-content: space-between;
-    padding: 16px;
-    margin: -20px; /* para agrandar las cards */
+    padding: 6px;
+    margin: -20px;
+    /* para agrandar las cards */
+}
+
+.titlecard1, .titlecard2, .titlecard3{
+    background-color: #622CBB;
+    font-size: large;
 }
 
 .actividades {
@@ -52,9 +39,3 @@
     color: #eeeeee;
     font-size: 25px
 }
-
-.boton-publicar {
-    --background: #622CBB;
-    /* Color de fondo */
-    --color: white;
-    /* Color del texto */}

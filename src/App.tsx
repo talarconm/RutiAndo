@@ -1,13 +1,21 @@
 import { Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
+  IonHeader,
   IonIcon,
   IonLabel,
+  IonMenu,
   IonRouterOutlet,
   IonTabBar,
   IonTabButton,
   IonTabs,
-  setupIonicReact
+  IonToolbar,
+  setupIonicReact,
+  IonTitle,
+  IonContent,
+  IonList,
+  IonItem,
+  IonPage
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 
@@ -20,6 +28,9 @@ import Inicio from './pages/inicio';
 import Rutas from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 import Tab4 from './pages/Tab4';
+import SanCristobal from './pages/san-cristobal';
+import LosPeumos from './pages/los-peumos';
+import ElCarbon from './pages/el-carbon';
 
 
 /* Core CSS required for Ionic components to work properly */
@@ -58,7 +69,27 @@ const App: React.FC = () => {
   return (
     <IonApp>
       <IonReactRouter>
-        <IonRouterOutlet>
+        {/* Menú lateral */}
+        <>
+          <IonMenu contentId="main-content"  >
+            <IonHeader>
+              <IonToolbar className="toolbarmenu">
+                <IonTitle>Menú</IonTitle>
+              </IonToolbar>
+            </IonHeader>
+            <IonContent>
+              <IonList className='lista'>
+                <IonItem className="item2" routerLink="/inicio">Inicio</IonItem>
+                <IonItem className="item2" routerLink="/tab2">Rutas</IonItem>
+                <IonItem className="item2" routerLink="/tab3">Comunidad</IonItem>
+                <IonItem className="item2" routerLink="/tab4">Perfil</IonItem>
+                <IonItem className="item2" routerLink="/tab4">Soporte</IonItem>
+              </IonList>
+            </IonContent>
+          </IonMenu>
+        </>
+        <IonTabs>
+        <IonRouterOutlet id="main-content">
           {/*redirigir al login cuando se abre la aplicación */}
           <Route exact path="/">
             <Redirect to="/login" />
@@ -68,43 +99,56 @@ const App: React.FC = () => {
           <Route exact path="/login">
             <Login />
           </Route>
+
+          {/*aqui estan las tabs */}
+          <Route exact path="/inicio">
+            <Inicio />
+          </Route>
+
+          <Route exact path="/tab2">
+            <Rutas />
+          </Route>
+
+          <Route exact path="/tab3">
+            <Tab3 />
+          </Route>
+
+          <Route exact path="/tab4">
+            <Tab4 />
+          </Route>
+
+          <Route exact path="/san-cristobal">
+          <SanCristobal/>
+          </Route>
+
+          <Route exact path="/los-peumos">
+          <LosPeumos/>
+          </Route>
+
+          <Route exact path="/el-carbon">
+          <ElCarbon/>
+          </Route>
         </IonRouterOutlet>
-
-        {/*aqui estan las tabs y el router outlet */}
-        <IonTabs>
-          <IonRouterOutlet>
-            <Route exact path="/inicio">
-              <Inicio />
-            </Route>
-            <Route exact path="/tab2">
-              <Rutas />
-            </Route>
-            <Route exact path="/tab3">
-              <Tab3 />
-            </Route>
-            <Route exact path="/tab4">
-              <Tab4 />
-            </Route>
-          </IonRouterOutlet>
-
-          <IonTabBar slot="bottom">
-            <IonTabButton tab="tab1" href="/inicio">
-              <IonIcon aria-hidden="true" icon={homeOutline} />
-              <IonLabel>Inicio</IonLabel>
-            </IonTabButton>
-            <IonTabButton tab="tab2" href="/tab2">
-              <IonIcon aria-hidden="true" icon={mapOutline} />
-              <IonLabel>Rutas</IonLabel>
-            </IonTabButton>
-            <IonTabButton tab="tab3" href="/tab3">
-              <IonIcon aria-hidden="true" icon={chatbubbleOutline} />
-              <IonLabel>Comunidad</IonLabel>
-            </IonTabButton>
-            <IonTabButton tab="tab4" href="/tab4">
-              <IonIcon aria-hidden="true" icon={personOutline} />
-              <IonLabel>Perfil</IonLabel>
-            </IonTabButton>
-          </IonTabBar>
+        
+        {/*barra de las tabs */}
+        <IonTabBar slot="bottom">
+          <IonTabButton tab="tab1" href="/inicio">
+            <IonIcon aria-hidden="true" icon={homeOutline} />
+            <IonLabel>Inicio</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="tab2" href="/tab2">
+            <IonIcon aria-hidden="true" icon={mapOutline} />
+            <IonLabel>Rutas</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="tab3" href="/tab3">
+            <IonIcon aria-hidden="true" icon={chatbubbleOutline} />
+            <IonLabel>Comunidad</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="tab4" href="/tab4">
+            <IonIcon aria-hidden="true" icon={personOutline} />
+            <IonLabel>Perfil</IonLabel>
+          </IonTabButton>
+        </IonTabBar>
         </IonTabs>
       </IonReactRouter>
     </IonApp>

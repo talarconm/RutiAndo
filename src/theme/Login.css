@@ -1,9 +1,8 @@
 .toolbar {
     --background: #6200ea;
-    /*color de fondo*/
 }
 
-.tittle-login{
+.tittle-login {
     color: #7beff6;
     font-family: "Alatsi-Regular", Helvetica;
     text-align: center;
@@ -11,8 +10,40 @@
     letter-spacing: 0;
 }
 
+h2{
+    color: #6200ea;
+}
+
+.subtitulo{
+    color: #6200ea;
+    text-align: center;
+}
+
 /* inicio sesion*/
-.tex-inicio {
+.texto-inicio {
     text-align: center;
     margin-top: 20px;
+}
+
+/* Inputs */
+ion-item{
+    --background: #D4C1F2;
+    border-radius: 20px;
+}
+
+.input-item {
+    margin-bottom: 15px;
+    color: #6200ea;
+}
+
+.boton-login{
+    --background: #6200ea;
+    color: #7beff6;
+}
+
+.zorro {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
 }

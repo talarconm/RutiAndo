@@ -11,12 +11,6 @@ ion-content {
     font-family: "Alatsi-Regular", Helvetica;
 }
 
-/* inicio sesion*/
-.ion-tex-inicio {
-    text-align: center;
-    margin-top: 20px;
-    color: black;
-    }
 
 /* tab 2*/
 .bar {
@@ -32,4 +26,21 @@ ion-content {
     line-height: normal;
     position: fixed;
     top: 0;
+}
+
+/* menu*/
+
+/* toolbar del menú */
+.toolbarmenu {
+    --background: #c2f4f7;
+    color: #7e49c7;
+    text-align: center; /*centrar el título */
+    font-size: 1.2rem; /*tamaño del título */
+}
+
+
+.item2 {
+    color: #fff; /* Color del texto */
+    font-size: 1.1rem; /* Tamaño de la fuente */
+    --background: #7e49c7; /* Fondo al hacer hover */
 }
