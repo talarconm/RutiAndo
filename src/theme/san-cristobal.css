@@ -1,15 +1,14 @@
 
-
-.publicacion {
+.publicacion5 {
     background-color: #622CBB;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
-.publicaciones-titulo {
-    color: #622CBB;
-    text-align: center;
-    font-size: 30px;
+.titulo-sancristobal{
+    font-family: "Roboto Condensed", sans-serif;
+    color: #eeeeee;
+    font-size: 25px;
 }
-
 .publicacion-subtitulo {
     color: #eeeeee;
     font-size: 18px

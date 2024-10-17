@@ -15,7 +15,9 @@ import {
   IonContent,
   IonList,
   IonItem,
-  IonPage
+  IonPage,
+  IonButtons,
+  IonMenuButton
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 
@@ -70,21 +72,31 @@ const App: React.FC = () => {
     <IonApp>
       <IonReactRouter>
         {/* Menú lateral */}
+        <IonHeader>
+          <IonToolbar className='bar'>
+            <IonTitle className='tex-titulo'>RutiAndo</IonTitle>
+            <img className="foto-zorro" alt='zorro' src='../src/images/zorroFINAL.png'/>
+            <IonButtons slot="end"> 
+              <IonMenuButton />
+            </IonButtons>
+          </IonToolbar>
+        </IonHeader>
         <>
           <IonMenu contentId="main-content"  >
             <IonHeader>
               <IonToolbar className="toolbarmenu">
                 <IonTitle>Menú</IonTitle>
               </IonToolbar>
-            </IonHeader>
-            <IonContent>
-              <IonList className='lista'>
+            </IonHeader> 
+            <IonContent className='color'>
+              {/* borre ionlist para sacar el borde ngro */}
+              {/* poner perfil en la parte de menu como didi */}
                 <IonItem className="item2" routerLink="/inicio">Inicio</IonItem>
                 <IonItem className="item2" routerLink="/tab2">Rutas</IonItem>
                 <IonItem className="item2" routerLink="/tab3">Comunidad</IonItem>
                 <IonItem className="item2" routerLink="/tab4">Perfil</IonItem>
                 <IonItem className="item2" routerLink="/tab4">Soporte</IonItem>
-              </IonList>
+              
             </IonContent>
           </IonMenu>
         </>

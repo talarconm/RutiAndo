@@ -19,7 +19,7 @@ const Tab1: React.FC = () => {
           <IonHeader collapse="condense">
           </IonHeader>
           <br />
-          <IonSearchbar className='searchbar'></IonSearchbar>
+          <IonSearchbar className='searchbar3'></IonSearchbar>
           <br />
           <IonTitle className='actividades'>Actividades</IonTitle>
 
@@ -29,7 +29,7 @@ const Tab1: React.FC = () => {
             <Cardinicio3 />
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingRight: 20 }}>
-          <IonTitle className='publicaciones-titulo'>Publicaciones</IonTitle>
+          <IonTitle className='publicaciones-titul'>Publicaciones</IonTitle>
             <Botonpublicar />
           </div>
           <Publicacion/>
@@ -49,7 +49,7 @@ function Botonpublicar() {
 
 function Cardinicio1() {
   return (
-    <IonCard className='cardinicio'>
+    <IonCard className='cardinicio1Tab3'>
       <img alt="Silhouette of mountains" src="../src/images/ruta.jpg" />
       <IonCardHeader>
         <IonCardTitle className='title-rutas'>Rutas</IonCardTitle>
@@ -63,7 +63,7 @@ function Cardinicio1() {
 
 function Cardinicio2() {
   return (
-    <IonCard className='cardinicio2'>
+    <IonCard className='cardinicio2Tab3'>
       <img alt="Silhouette of mountains" src="../src/images/ruta-cajon.jpg" />
       <IonCardHeader>
         <IonCardTitle className='title-retos'>Retos</IonCardTitle>
@@ -77,7 +77,7 @@ function Cardinicio2() {
 
 function Cardinicio3() {
   return (
-    <IonCard className='cardinicio3'>
+    <IonCard className='cardinicio3Tab3'>
       <img alt="Silhouette of mountains" src="../src/images/publicacion.jpg" />
       <IonCardHeader>
         <IonCardTitle className='title-social'>Social</IonCardTitle>
@@ -94,7 +94,7 @@ function Publicacion() {
     <IonCard className='publicacion'>
       <img alt="Silhouette of mountains" src="../src/images/reunion.jpg" />
       <IonCardHeader>
-        <IonCardTitle>Float_slowly</IonCardTitle>
+        <IonCardTitle className='publicaciones-titul'>Float_slowly</IonCardTitle>
         <IonCardSubtitle className='publicacion-subtitulo'>Festival de la bicicleta 2023!!</IonCardSubtitle>
       </IonCardHeader>
 

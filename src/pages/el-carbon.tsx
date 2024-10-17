@@ -1,6 +1,6 @@
 import { IonContent, IonButton, IonMenuButton, IonButtons, IonCard, IonCardContent, IonCardSubtitle, IonCardTitle, IonCardHeader, IonHeader, IonPage, IonTitle, IonToolbar, IonChip, IonIcon } from '@ionic/react';
 import { star, starHalf } from 'ionicons/icons'; //ícono de estrella
-import '../theme/san-cristobal.css';
+import '../theme/el-carbon.css';
 
 const Tab1: React.FC = () => {
     return (
@@ -42,7 +42,7 @@ function Publicacion() {
         <IonCard className='publicacion'>
             <img alt="Silhouette of mountains" src="../src/images/reunion.jpg" />
             <IonCardHeader>
-                <IonCardTitle>Cerro El Carbón</IonCardTitle>
+                <IonCardTitle className='titulo-elcarbon'>Cerro El Carbón</IonCardTitle>
                 <div className='container-icono'>
                 <IonIcon icon={star}  className="star-icon"/>
                 <IonIcon icon={star}  className="star-icon"/>

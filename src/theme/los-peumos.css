@@ -1,13 +1,12 @@
 
-
-.publicacion {
+.publicacion4 {
     background-color: #622CBB;
 }
 
-.publicaciones-titulo {
-    color: #622CBB;
-    text-align: center;
-    font-size: 30px;
+.titulo-lospeumos{
+    font-family: "Roboto Condensed", sans-serif;
+    color: #eeeeee;
+    font-size: 25px;
 }
 
 .publicacion-subtitulo {
@@ -15,13 +14,14 @@
     font-size: 18px
 }
 
-.botoniniciar {
+.botoniniciar4 {
     --background: #622CBB;
     --color: #7beff6;
-    
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .chip-container {
+    
     display: flex;
     flex-wrap: wrap; /* Permite que los chips se muevan a una nueva línea si es necesario */
     gap: 8px; /* Espacio entre cada chip */
@@ -29,10 +29,15 @@
     padding: 10px; /* Margen interno del contenedor */
 }
 
-.chip {
-    --background: #a2dadd; /* Color de fondo morado */
-    --color: #622CBB; /* Texto en blanco */
+.chip1,
+.chip2,
+.chip3,
+.chip4,
+.chip5 {
+    --background: #a2dadd; /* Color de fondo */
+    --color: #622CBB; /* Texto */
     border-radius: 16px; /* Bordes redondeados */
     padding: 5px 10px; /* Tamaño interno del chip */
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 14px; /* Tamaño del texto */
 }

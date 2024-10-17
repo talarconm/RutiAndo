@@ -11,14 +11,12 @@ IonContent {
     padding: 16px;
 }
 
-
 .card {
     background-color: #622CBB;
     height: 150px;
     width: 30%; 
     margin: 8px;
 }
-
 
 ion-item.progreso { background-color: aqua !important;} /* no funciona no se por que  */
 

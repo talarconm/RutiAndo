@@ -1,5 +1,15 @@
-.toolbar {
+.bar {
     --background: #6200ea;
+}
+/* =================== CONTENEDOR PRINCIPAL =================== */
+.login-container{
+    display: flex;
+    flex-direction: column;/*establece la dirección en la que los elementos hijos del contenedor se orgnizan*/
+    justify-content: center;/*centrará los elementos hijos verticalmente en el contenedor*/
+    align-items: center;/*los elementos estén centrados en el eje horizontal, por lo que todos los elementos se alinearán en el medio de la página de izquierda a derecha*/
+    height: 100%;
+    padding: 20px;/*el espacio entre el borde del contenedor y su contenido*/
+    box-sizing: border-box;
 }
 
 .tittle-login {
@@ -25,16 +35,14 @@ h2{
     margin-top: 20px;
 }
 
-/* Inputs */
-ion-item{
-    --background: #D4C1F2;
-    border-radius: 20px;
-}
-
+/* Input */
 .input-item {
+    --background: #D4C1F2;
     margin-bottom: 15px;
     color: #6200ea;
+    border-radius: 8px;
 }
+
 
 .boton-login{
     --background: #6200ea;

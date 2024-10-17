@@ -4,22 +4,13 @@
     /*color de fondo*/
 }
 
-.searchbar {
-    --background: #622CBB;
-    --color: white;
-    --placeholder-color: #eeeeee;
-    padding-left: 30px;
+.searchbar2{
+    --background:#622CBB;
 }
 
-.tex-titulo {
-    color: #7beff6;
-    font-family: "Alatsi-Regular", Helvetica;
-    text-align: left;
-    font-size: 40px;
-    letter-spacing: 0;
-}
-
-.ion-tex-inicio {
+.ion-tex-inicio, 
+.ion-tex-mapa {
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 30px;
     color: #622CBB;
     text-align: center;
@@ -50,6 +41,7 @@
 .title1,
 .title2,
 .title3 {
+    font-family: "Roboto Condensed", sans-serif;
     font-size: large;
 }
 
@@ -57,6 +49,7 @@
 .card-header1,
 .card-header2,
 .card-header3 {
+    font-family: "Roboto Condensed", sans-serif;
     display: grid;
     grid-template-rows: auto 1fr;
     font-size: large;
@@ -80,14 +73,6 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-.ion-tex-mapa {
-    text-align: center;
-    font-size: 30px;
-    color: #622CBB;
-    text-align: center;
-}
-
-
 /*imagen mapa*/
 .imagen {
     width: 100%;
@@ -105,9 +90,8 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-
 .alert-button {
+    font-family: "Roboto Condensed", sans-serif;
     --background: #622CBB;
     /* Ajusta los colores si es necesario */
     --color: white;

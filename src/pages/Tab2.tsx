@@ -1,4 +1,4 @@
-import { IonContent, IonText, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonSearchbar, IonMenu, IonButtons, IonMenuButton, IonRouterLink, IonButton, IonAlert } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonSearchbar, IonMenu, IonButtons, IonMenuButton, IonRouterLink, IonButton, IonAlert } from '@ionic/react';
 import '../theme/Tab2.css';
 import mapaImage from '../images/mapa.png';
 import { useState } from 'react';
@@ -23,7 +23,7 @@ const Tab2: React.FC = () => {
         <IonHeader collapse="condense">
         </IonHeader>
         <br />
-        <IonSearchbar className='searchbar'></IonSearchbar>
+        <IonSearchbar className='searchbar2'></IonSearchbar>
         <br />
 
         {/* botón de alerta */}
@@ -32,17 +32,17 @@ const Tab2: React.FC = () => {
           <IonButton className='alert-button' onClick={() => setShowAlert(true)}>EMERGENCIAS</IonButton>
         </div>
 
-        {/* IonAlert */}
+        {/*IonAlert */}
         <IonAlert
           isOpen={showAlert}
           onDidDismiss={() => setShowAlert(false)}
           header="Presionaste el botón de emergencias"
           message="¿Deseas llamar a emergencias?"
           buttons={['Si']}
-          
+
         />
 
-        {/* Aca empiezan las cards */}
+        {/*aca empiezan las cards */}
         <div className='container-cards'>
           <IonCard className='card1'>
             <IonRouterLink className='router' routerLink='/san-cristobal'>

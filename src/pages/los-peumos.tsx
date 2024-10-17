@@ -31,7 +31,7 @@ const Tab1: React.FC = () => {
 function Botoniniciar() {
     return (
         <>
-            <IonButton className="botoniniciar" shape="round" expand="block">Iniciar Ruta</IonButton>
+            <IonButton className="botoniniciar4" shape="round" expand="block">Iniciar Ruta</IonButton>
         </>
     );
 }
@@ -39,10 +39,10 @@ function Botoniniciar() {
 
 function Publicacion() {
     return (
-        <IonCard className='publicacion'>
+        <IonCard className='publicacion4'>
             <img alt="Silhouette of mountains" src="../src/images/reunion.jpg" />
             <IonCardHeader>
-                <IonCardTitle>Sendero Los Peumos</IonCardTitle>
+                <IonCardTitle className='titulo-lospeumos'>Sendero Los Peumos</IonCardTitle>
                 <div className='container-icono'>
                     <IonIcon icon={star} className="star-icon" />
                     <IonIcon icon={star} className="star-icon" />
@@ -56,11 +56,11 @@ function Publicacion() {
                 </IonCardSubtitle>
                 <>
                     <div className='chip-container'>
-                        <IonChip className='chip'>Senderismo</IonChip>
-                        <IonChip className='chip'>Familiar</IonChip>
-                        <IonChip className='chip'>Vista</IonChip>
-                        <IonChip className='chip'>Rocoso</IonChip>
-                        <IonChip className='chip'>Río</IonChip>
+                        <IonChip className='chip1'>Senderismo</IonChip>
+                        <IonChip className='chip2'>Familiar</IonChip>
+                        <IonChip className='chip3'>Vista</IonChip>
+                        <IonChip className='chip4'>Rocoso</IonChip>
+                        <IonChip className='chip5'>Río</IonChip>
                     </div>
                 </>
             </IonCardHeader>

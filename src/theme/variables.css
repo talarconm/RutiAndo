@@ -1,46 +1,58 @@
 ion-content {
-    --background: #c2f4f7; 
+    --background: #6bb4ba;
 }
+
+.foto-zorro {
+    width: 45px;
+    height: 45px;
+    margin-left: 60%;
+}
+
+ion-tab-bar {
+    --background: #622CBB;
+}
+
 /* tab 1*/
 
 /* RutiAndo*/
-.tex-titulo1 {
-    text-align: center;
-    margin-top: 20px;
-    color: #622CBB;
-    font-family: "Alatsi-Regular", Helvetica;
-}
-
-
-/* tab 2*/
-.bar {
-    --background: #6200ea;}
-
-.tex-titulo{
-    color: #7beff6;
-    font-family: "Alatsi-Regular", Helvetica;
+.tex-titulo {
+    color: #6bb4ba;
+    font-family: "Rowdies", sans-serif;
     font-size: 40px;
-    font-weight: 400;
-    left: 0;
-    letter-spacing: 0;
+    letter-spacing: 0px;
+    /*ajusta el espacio entre las letras en un texto*/
     line-height: normal;
     position: fixed;
     top: 0;
 }
 
-/* menu*/
+
+/* tab 2*/
+.bar {
+    --background: #622CBB;
+}
+
+/* menu /
 
 /* toolbar del menú */
 .toolbarmenu {
-    --background: #c2f4f7;
-    color: #7e49c7;
-    text-align: center; /*centrar el título */
-    font-size: 1.2rem; /*tamaño del título */
+    font-family: "Roboto Condensed", sans-serif;
+    --background: #622CBB;
+    color: #ffffff;
+    text-align: center;
+    /*centrar el título */
+    font-size: 1.2rem;
+    /*tamaño del título */
 }
 
 
 .item2 {
-    color: #fff; /* Color del texto */
-    font-size: 1.1rem; /* Tamaño de la fuente */
-    --background: #7e49c7; /* Fondo al hacer hover */
+    font-family: "Roboto Condensed", sans-serif;
+    color: #fff;
+    /* Color del texto */
+    font-size: 1.1rem;
+    /* Tamaño de la fuente */
+    --background: #603F83;
+    /* Fondo al hacer hover */
+    border-radius: none
 }

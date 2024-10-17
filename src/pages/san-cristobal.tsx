@@ -39,10 +39,10 @@ function Botoniniciar() {
 
 function Publicacion() {
     return (
-        <IonCard className='publicacion'>
+        <IonCard className='publicacion5'>
             <img alt="Silhouette of mountains" src="../src/images/reunion.jpg" />
             <IonCardHeader>
-                <IonCardTitle>Cerro san Cristobal</IonCardTitle>
+                <IonCardTitle className='titulo-sancristobal'>Cerro san Cristobal</IonCardTitle>
                 <div className='container-icono'>
                 <IonIcon icon={star}  className="star-icon"/>
                 <IonIcon icon={star}  className="star-icon"/>

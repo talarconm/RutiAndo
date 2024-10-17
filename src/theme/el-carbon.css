@@ -1,24 +1,23 @@
-
-
 .publicacion {
     background-color: #622CBB;
 }
 
-.publicaciones-titulo {
-    color: #622CBB;
-    text-align: center;
-    font-size: 30px;
-}
-
 .publicacion-subtitulo {
+    font-family: "Roboto Condensed", sans-serif;
     color: #eeeeee;
-    font-size: 18px
+    font-size: 16px
 }
 
-.botoniniciar {
+.botoniniciar{
     --background: #622CBB;
     --color: #7beff6;
-    
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.titulo-elcarbon{
+    font-family: "Roboto Condensed", sans-serif;
+    color: #eeeeee;
+    font-size: 25px;
 }
 
 .chip-container {
@@ -29,7 +28,8 @@
     padding: 10px; /* Margen interno del contenedor */
 }
 
-.chip {
+.chip{
+    font-family: "Roboto Condensed", sans-serif;
     --background: #a2dadd; /* Color de fondo morado */
     --color: #622CBB; /* Texto en blanco */
     border-radius: 16px; /* Bordes redondeados */

@@ -1,4 +1,4 @@
-import { IonButton, IonInput, IonItem, IonLabel, IonPage, IonContent, IonHeader, IonToolbar, IonTitle, IonText } from '@ionic/react';
+import { IonButton, IonInput, IonItem, IonLabel, IonPage, IonContent, IonHeader, IonToolbar, IonTitle, IonText, IonList } from '@ionic/react';
 import { useHistory } from 'react-router-dom'; // hook useHistory
 import '../theme/Login.css';
 
@@ -6,7 +6,7 @@ const Login: React.FC = () => {
     const history = useHistory(); // crea una instancia del hook useHistory
 
     const handleLogin = () => {
-        // Esto es para redirigir a la pestaña de inicio después del inicio de sesión
+        //esto es para redirigir a la pestaña de inicio después del inicio de sesión
         console.log("Botón de ingresar presionado"); // para ver si se está ejecutando bien en la consola
         history.push('/inicio'); // Redirige a la ruta de la pestaña de inicio
     };
@@ -14,40 +14,54 @@ const Login: React.FC = () => {
     return (
         <IonPage>
             <IonHeader>
-                <IonToolbar className='toolbar'>
+                <IonToolbar className='bar'>
                     <IonTitle className='tittle-login' size="large" color="primary">RutiAndo</IonTitle>
                 </IonToolbar>
             </IonHeader>
-            <IonContent className="ion-padding">
-                <IonText className='texto-inicio'>
-                    <h2>Crea tu cuenta para disfrutar grandes aventuras</h2>
-                </IonText>
-                <IonText className="subtitulo">
-                    <h3>Iniciar sesión</h3>
-                </IonText>
+            <IonContent fullscreen>
+                <div className='login-container'>
+                    <IonText className='texto-inicio'>
+                        <h2>Crea tu cuenta para disfrutar grandes aventuras</h2>
+                    </IonText>
+                    <IonText className="subtitulo">
+                        <h3>Iniciar sesión</h3>
+                    </IonText>
 
-                {/* Campo de entrada de email */}
-                <IonItem lines="none" className="input-item">
-                    <IonLabel position="floating" className="label-login">Email</IonLabel>
-                    <IonInput type="email" clearInput className="input-login" />
-                </IonItem>
+                    {/* Campo de entrada de email*/}
+                    <IonList style={{ background: 'transparent' }}>
+                        <IonItem lines='none' className='input-item'>
+                            <IonInput labelPlacement="floating" clearInput>
+                                <div slot="label">
+                                    Email <IonText color="danger">(Required)</IonText>
+                                </div>
+                            </IonInput>
+                        </IonItem>
+                    </IonList>
 
-                <IonItem lines="none" className="input-item">
-                    <IonLabel position="floating">Contraseña</IonLabel>
-                    <IonInput type="password" />
-                </IonItem>
-                <IonText className="password-hint" style={{ color: '#6A0DAD' }}>
-                    <h6>¿Olvidaste tu contraseña?</h6>
-                </IonText>
+                    {/* Campo de entrada de contraseña */}
+                    <IonList style={{ background: 'transparent' }}>
+                        <IonItem lines='none' className='input-item'>
+                            <IonInput labelPlacement="floating" clearInput>
+                                <div slot="label" className='div-login'>
+                                    Contraseña <IonText color="dark">(Required)</IonText>
+                                </div>
+                            </IonInput>
+                        </IonItem>
+                    </IonList>
 
-                {/* Botón de ingresar */}
-                <IonButton className='boton-login' expand="block" shape="round" onClick={handleLogin}>
-                    Ingresar
-                </IonButton>
+                    <IonText className="password-hint" style={{ color: '#6A0DAD' }}>
+                        <h6>¿Olvidaste tu contraseña?</h6>
+                    </IonText>
 
-                {/* Imagen */}
-                <div className="zorro">
-                    <img className="foto-perfil" src="../src/images/zorroFINAL.png" alt="zorro" />
+                    {/* Botón de ingresar */}
+                    <IonButton className='boton-login' expand="block" shape="round" onClick={handleLogin}>
+                        Ingresar
+                    </IonButton>
+
+                    {/* Imagen */}
+                    <div className="zorro">
+                        <img className="foto-perfil" src="../src/images/zorroFINAL.png" alt="zorro" />
+                    </div>
                 </div>
             </IonContent>
         </IonPage>
